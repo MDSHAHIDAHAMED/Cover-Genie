@@ -686,17 +686,17 @@ select.csel-native {
   align-items: center;
   justify-content: space-between;
   gap: 10px;
-  background: var(--panel-2);
-  border: 1px solid var(--line-2);
+  background: rgba(10, 13, 19, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.09);
   color: var(--text);
-  border-radius: 8px;
-  padding: 9.5px 12px 9.5px 11px;
+  border-radius: 9px;
+  padding: 10px 12px;
   font-size: 13.5px;
   font-family: 'Inter', sans-serif;
   text-align: left;
   cursor: pointer;
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25);
-  transition: border-color .15s var(--ease), box-shadow .15s var(--ease), background .15s var(--ease);
+  box-shadow: inset 0 1.5px 3px rgba(0, 0, 0, 0.35);
+  transition: border-color .18s var(--ease), box-shadow .18s var(--ease), background .18s var(--ease);
 }
 
 .csel-trigger:hover {
@@ -913,17 +913,17 @@ input[type="date"].cdate-native {
   align-items: center;
   justify-content: space-between;
   gap: 10px;
-  background: var(--panel-2);
-  border: 1px solid var(--line-2);
+  background: rgba(10, 13, 19, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.09);
   color: var(--text);
-  border-radius: 8px;
-  padding: 9.5px 11px 9.5px 12px;
+  border-radius: 9px;
+  padding: 10px 12px;
   font-size: 13.5px;
   font-family: 'Inter', sans-serif;
   text-align: left;
   cursor: pointer;
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25);
-  transition: border-color .15s var(--ease), box-shadow .15s var(--ease), background .15s var(--ease);
+  box-shadow: inset 0 1.5px 3px rgba(0, 0, 0, 0.35);
+  transition: border-color .18s var(--ease), box-shadow .18s var(--ease), background .18s var(--ease);
 }
 
 .cdate-trigger:hover {
@@ -1212,8 +1212,8 @@ input[type="date"].cdate-native {
 
 .btn {
   appearance: none;
-  border: 1px solid var(--line-2);
-  background: var(--panel-2);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: linear-gradient(180deg, rgba(32, 38, 52, 0.8) 0%, rgba(20, 24, 34, 0.85) 100%);
   color: var(--text);
   border-radius: 8px;
   padding: 8px 14px;
@@ -1221,15 +1221,16 @@ input[type="date"].cdate-native {
   font-weight: 600;
   font-family: 'Inter', sans-serif;
   cursor: pointer;
-  box-shadow: var(--shadow-soft);
-  transition: transform .12s var(--ease), border-color .15s var(--ease), background .15s var(--ease), box-shadow .15s var(--ease);
+  box-shadow: 0 2px 6px -2px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  transition: transform .15s var(--ease), border-color .18s var(--ease), background .18s var(--ease), box-shadow .18s var(--ease);
   white-space: nowrap;
 }
 
 .btn:hover {
-  border-color: var(--brass);
-  transform: translateY(-1px);
-  box-shadow: 0 6px 16px -8px rgba(0, 0, 0, 0.5);
+  border-color: rgba(214, 164, 74, 0.5);
+  background: linear-gradient(180deg, rgba(38, 46, 62, 0.9) 0%, rgba(24, 29, 41, 0.95) 100%);
+  transform: translateY(-1.5px);
+  box-shadow: 0 8px 18px -6px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(214, 164, 74, 0.15);
 }
 
 .btn:active {
@@ -1237,15 +1238,18 @@ input[type="date"].cdate-native {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--brass-2), var(--brass));
-  border-color: var(--brass);
+  background: linear-gradient(135deg, #f0c378 0%, #d6a24a 60%, #b8832a 100%);
+  border: 1px solid rgba(255, 235, 180, 0.35);
   color: var(--brass-ink);
-  box-shadow: 0 8px 20px -8px rgba(214, 162, 74, 0.55);
+  font-weight: 700;
+  box-shadow: 0 8px 22px -6px rgba(214, 162, 74, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.35);
 }
 
 .btn-primary:hover {
-  background: linear-gradient(135deg, #f6ce8c, #e3b463);
-  box-shadow: 0 10px 24px -8px rgba(214, 162, 74, 0.65);
+  background: linear-gradient(135deg, #f7d38e 0%, #deb056 60%, #c48f34 100%);
+  border-color: rgba(255, 245, 210, 0.5);
+  box-shadow: 0 10px 26px -6px rgba(214, 162, 74, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.45);
+  transform: translateY(-1.5px);
 }
 
 .btn-block {
@@ -1324,14 +1328,14 @@ input[type="date"].cdate-native {
 
 .tpl-card {
   position: relative;
-  border: 1.5px solid var(--line-2);
-  border-radius: 10px;
-  padding: 8px 7px 9px;
+  border: 1.5px solid rgba(255, 255, 255, 0.09);
+  border-radius: 11px;
+  padding: 9px 8px 10px;
   cursor: pointer;
   text-align: center;
-  background: var(--panel-2);
-  box-shadow: var(--shadow-soft);
-  transition: border-color .15s var(--ease), transform .15s var(--ease), box-shadow .15s var(--ease);
+  background: linear-gradient(180deg, rgba(28, 34, 46, 0.6) 0%, rgba(18, 22, 31, 0.7) 100%);
+  box-shadow: 0 4px 12px -4px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  transition: border-color .18s var(--ease), transform .18s var(--ease), box-shadow .18s var(--ease), background .18s var(--ease);
 }
 
 .tpl-card:hover {
@@ -1719,14 +1723,14 @@ input[type="date"].cdate-native {
 }
 
 .palette-swatch {
-  border: 1.5px solid var(--line-2);
-  border-radius: 10px;
-  padding: 7px;
+  border: 1.5px solid rgba(255, 255, 255, 0.09);
+  border-radius: 11px;
+  padding: 8px 7px;
   cursor: pointer;
   text-align: center;
-  background: var(--panel-2);
-  box-shadow: var(--shadow-soft);
-  transition: border-color .15s var(--ease), transform .15s var(--ease), box-shadow .15s var(--ease);
+  background: linear-gradient(180deg, rgba(28, 34, 46, 0.6) 0%, rgba(18, 22, 31, 0.7) 100%);
+  box-shadow: 0 4px 12px -4px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  transition: border-color .18s var(--ease), transform .18s var(--ease), box-shadow .18s var(--ease), background .18s var(--ease);
 }
 
 .palette-swatch:hover {
@@ -1942,13 +1946,14 @@ input[type="date"].cdate-native {
 }
 
 .logo-drop {
-  border: 1.5px dashed var(--line-2);
-  border-radius: 9px;
-  padding: 14px;
+  border: 1.5px dashed rgba(214, 164, 74, 0.28);
+  border-radius: 11px;
+  padding: 16px 14px;
   text-align: center;
   cursor: pointer;
-  background: var(--panel-2);
-  transition: border-color .15s var(--ease), background .15s var(--ease);
+  background: linear-gradient(180deg, rgba(25, 30, 42, 0.45) 0%, rgba(15, 18, 26, 0.6) 100%);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.25);
+  transition: border-color .18s var(--ease), background .18s var(--ease), transform .18s var(--ease);
   font-size: 11.5px;
   color: var(--text-dim);
   line-height: 1.5;
@@ -2247,12 +2252,12 @@ input[type=range]:active {
 .lang-ctl {
   display: flex;
   align-items: center;
-  gap: 3px;
-  background: var(--panel-2);
-  border: 1px solid var(--line-2);
-  border-radius: 8px;
-  padding: 3px;
-  margin-bottom: 10px;
+  gap: 4px;
+  background: rgba(10, 13, 19, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 9px;
+  padding: 3.5px;
+  margin-bottom: 12px;
 }
 
 .lang-ctl button {
@@ -4679,14 +4684,26 @@ input[type=range]:active {
   top: 224px;
   left: 86px;
   right: 100px;
+  border-radius: 38px;
+  z-index: auto;
+  pointer-events: auto;
+}
+
+.tpl-circles .ci-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
   border: 3px solid #181818;
   border-radius: 38px;
-  z-index: 1;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .tpl-circles .ci-box-inner {
   padding: 220px 42px 36px;
   text-align: right;
+  position: relative;
+  z-index: 2;
 }
 
 .tpl-circles .ci-uni-name {
@@ -12675,12 +12692,11 @@ html:not([data-page-bg="plain"]) #paper>.tpl-nocturne {
 
 /* Circles */
 .tpl-circles .ci-art {
-  z-index: 0;
+  z-index: 1;
 }
 
-.tpl-circles .ci-logo,
-.tpl-circles .ci-box {
-  z-index: 2;
+.tpl-circles .ci-logo {
+  z-index: 3;
 }
 
 .tpl-circles .ci-box-inner {

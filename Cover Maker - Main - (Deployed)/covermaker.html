@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Cover Page Maker — Create & Download Your Cover Page Online | Cover Genie</title>
+  <meta name="title" content="Cover Page Maker — Create & Download Your Cover Page Online | Cover Genie">
+  <meta name="description"
+    content="Build your A4 assignment, lab report, or group cover page right here: pick a template, add your university, name, and course, then export instantly as PDF or PNG. No sign-up, no MS Word.">
+  <meta name="keywords"
+    content="cover page maker, online cover page generator, assignment cover page maker, lab report cover page maker, group assignment cover page, A4 cover page tool, cover genie, cover page template, PDF cover page export, university cover page generator, free cover page creator">
+  <meta name="author" content="Cover Genie">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="canonical" href="https://covergenie.online/covermaker.html">
+  <meta name="theme-color" content="#1e5993">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://covergenie.online/covermaker.html">
+  <meta property="og:site_name" content="Cover Genie">
+  <meta property="og:title" content="Cover Page Maker — Create & Download Your Cover Page Online | Cover Genie">
+  <meta property="og:description"
+    content="Pick a template, add your details, and export a print-ready A4 cover page as PDF or PNG in seconds — free, no sign-up.">
+  <meta property="og:image" content="https://covergenie.online/img/og.jpg">
+  <meta property="og:image:secure_url" content="https://covergenie.online/img/og.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Cover Genie - A4 Cover Page Engine Preview">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://covergenie.online/covermaker.html">
+  <meta name="twitter:title" content="Cover Page Maker — Create & Download Your Cover Page Online | Cover Genie">
+  <meta name="twitter:description"
+    content="Pick a template, add your details, and export a print-ready A4 cover page as PDF or PNG in seconds — free, no sign-up.">
+  <meta name="twitter:image" content="https://covergenie.online/img/og.jpg">
+  <meta name="color-scheme" content="dark">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Cover Genie — Cover Page Maker",
+    "url": "https://covergenie.online/covermaker.html",
+    "description": "Free online tool to generate, customize, and export professional A4 assignment and lab report cover pages in PDF and PNG formats.",
+    "applicationCategory": "DesignApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "Requires JavaScript. Requires HTML5.",
+    "isPartOf": { "@type": "WebSite", "name": "Cover Genie", "url": "https://covergenie.online/" },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=EB+Garamond:wght@400;500;600;700;800&family=Merriweather:wght@300;400;700;900&family=Lora:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800;900&family=PT+Serif:wght@400;700&family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Li Ador Noirrit (Bangla) -->
+  <link rel="preconnect" href="https://fonts.cdnfonts.com" crossorigin>
+  <link href="https://fonts.cdnfonts.com/css/li-ador-noirrit" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/fav.svg" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/fav2.svg">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
+</head>
+
+<body>
+  <noscript>
+    <div style="padding: 20px; background: #fff; color: #333; text-align: center; display: none;">
+      <h2>Cover Genie — Free A4 Assignment & Lab Report Cover Page Engine</h2>
+      <p>Cover Genie lets university and college students generate clean, standardized A4 cover pages and lab report
+        index sheets. Customize student details, course titles, submission dates, teacher designations, university
+        logos, and color palettes, then download as print-ready PDF or high-resolution PNG.</p>
+      <p>Please enable JavaScript in your browser to use the interactive generator.</p>
+    </div>
+  </noscript>
+  <div class="app-loader show" id="appLoader" data-loader-mode="boot" aria-hidden="false">
+    <div class="app-loader-card">
+      <span class="app-loader-icon" id="appLoaderIcon" aria-hidden="true"><i class="fa-solid fa-hat-wizard"></i></span>
+      <span class="app-loader-title" id="appLoaderTitle">Your Genie Awakens</span>
+      <span class="app-loader-text" id="appLoaderText">Summoning your cover page…</span>
+    </div>
+  </div>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <!-- Mobile-only drawer header (hidden on desktop via CSS) -->
+      <div class="sidebar-close"><b data-i18n="sidebarCustomize">Customize</b><span data-i18n="sidebarTapPreview">TAP PREVIEW BELOW TO SEE CHANGES</span></div>
+      <div class="brand"><span class="brand-mark">CG</span>
+        <h1>Cover Genie</h1>
+        <label class="auto-match-toggle" for="autoPaletteMatchCheck"
+          title="Automatically build a color palette from your logo whenever one is available" data-i18n-title="autoMatchPaletteTitle">
+          <input type="checkbox" id="autoPaletteMatchCheck">
+          <span data-i18n="autoMatchPaletteLabel">Auto-match palette</span>
+        </label>
+      </div>
+      <p class="brand-sub">CORE · A4 COVER PAGE ENGINE · 210×297MM</p>
+      <div class="group" data-accordion-pinned="true">
+        <p class="group-title"><span class="group-icon"><i class="fa-solid fa-toggle-on" aria-hidden="true"></i></span>
+          <span data-i18n="coverPageTypeTitle">Cover Page Type</span></p>
+        <p class="group-desc" data-i18n="coverPageTypeDesc">Switch what this cover page is for — labels and fields below (and on the cover itself)
+          update to match.</p>
+        <label class="first" data-i18n="coverLanguageLabel">Cover language</label>
+        <div class="lang-ctl" id="langCtl" role="group" aria-label="Cover language">
+          <button type="button" class="active" data-lang="en">English</button>
+          <button type="button" data-lang="bn">বাংলা</button>
+        </div>
+        <label data-i18n="topPageForLabel">This is a top page for</label>
+        <select id="docTypeSelect" class="csel-native">
+          <option value="assignment" selected>Assignment</option>
+          <option value="lab">Lab Report</option>
+          <option value="group">Group Assignment</option>
+        </select>
+      </div>
+      <div class="group" id="lookupGroup">
+        <p class="group-title"><span class="group-icon"><i class="fa-solid fa-magnifying-glass"
+              aria-hidden="true"></i></span> <span data-i18n="studentLookupTitle">Student Lookup</span></p>
+        <p class="group-desc"><b data-i18n="noteLabel">Note:</b> <span data-i18n="lookupNote">Saved records live only in this browser on
+          this device — there's no server or account behind it.</span></p>
+        <label class="first" data-i18n="universityCollegeNameLabel">University / College Name</label>
+        <div class="field-suggest">
+          <input type="text" id="lookupUniversity" placeholder="Optional — filled in automatically on a match" data-i18n-placeholder="optionalAutoFillPlaceholder">
+        </div>
+        <label><span data-i18n="studentRegIdLabel">Student / Registration ID</span> <span class="req">*</span></label>
+        <div class="field-suggest">
+          <input type="text" id="lookupId" placeholder="Enter your Registration ID or roll number" required aria-required="true" data-i18n-placeholder="lookupIdPlaceholder">
+        </div>
+        <label data-i18n="departmentLabel">Department</label>
+        <div class="field-suggest">
+          <input type="text" id="lookupDepartment" placeholder="Optional — filled in automatically on a match" data-i18n-placeholder="optionalAutoFillPlaceholder">
+        </div>
+        <label data-i18n="batchLabel">Batch</label>
+        <div class="lookup-row">
+          <div class="field-suggest" style="flex:1;">
+            <input type="text" id="lookupBatch" placeholder="Optional — filled in automatically on a match" data-i18n-placeholder="optionalAutoFillPlaceholder">
+          </div>
+          <button class="btn" id="lookupBtn"><i class="fa-regular fa-file-zipper"></i><span data-i18n="fetchBtn">Fetch</span></button>
+        </div>
+        <p class="hint" id="lookupHint" data-i18n="lookupHintText">Check if your data is in local storage</p>
+      </div>
+      <div class="group" id="studentIdGroup">
+        <p class="group-title"><span class="group-icon"><i class="fa-solid fa-id-card" aria-hidden="true"></i></span>
+          <span data-i18n="studentIdTitle">Student Identification</span></p>
+        <label class="first"><span data-i18n="universityCollegeNameLabel">University / College Name</span> <span class="req">*</span></label>
+        <div class="field-suggest">
+          <input type="text" data-bind="universityName" placeholder="Enter your university or college name" required
+            aria-required="true" data-i18n-placeholder="universityPlaceholder">
+        </div>
+        <label><span data-i18n="fullNameLabel">Full Name</span> <span class="req">*</span></label>
+        <div class="field-suggest">
+          <input type="text" data-bind="studentName" placeholder="Enter your full name" required
+            aria-required="true" data-i18n-placeholder="fullNamePlaceholder">
+        </div>
+        <div class="row">
+          <div class="field-suggest"><label><span data-i18n="studentRegIdShortLabel">Student / Reg ID</span> <span class="req">*</span></label><input type="text"
+              data-bind="studentId" placeholder="Enter your Student / Registration ID" required aria-required="true" data-i18n-placeholder="studentRegIdPlaceholder"></div>
+          <div class="field-suggest"><label><span data-i18n="rollNoLabel">Roll No.</span> <span class="opt" data-i18n="optionalTag">(Optional)</span></label><input type="text"
+              data-bind="roll" placeholder="Enter your roll number" data-i18n-placeholder="rollPlaceholder"></div>
+        </div>
+        <div class="row">
+          <div><label><span data-i18n="departmentLabel">Department</span> <span class="req">*</span></label><input type="text" data-bind="department"
+              placeholder="Enter your department" required aria-required="true" data-i18n-placeholder="departmentPlaceholder"></div>
+          <div><label><span data-i18n="sectionBatchLabel">Section / Batch</span> <span class="opt" data-i18n="optionalTag">(Optional)</span></label><input type="text" data-bind="section"
+              placeholder="Enter your section or batch" data-i18n-placeholder="sectionPlaceholder"></div>
+        </div>
+        <label><span data-i18n="semesterLabel">Semester</span> <span class="opt" data-i18n="optionalTag">(Optional)</span></label>
+        <input type="text" data-bind="semester" placeholder="Enter your semester" data-i18n-placeholder="semesterPlaceholder">
+        <div class="logo-actions">
+          <button class="btn btn-sm" id="saveRecordBtn"><i class="fa-solid fa-floppy-disk"
+              aria-hidden="true"></i><span data-i18n="saveStudentBtn">Save this student</span></button>
+          <button class="btn btn-sm btn-ghost" id="sampleBtn"><i class="fa-solid fa-spinner"></i> <span data-i18n="loadSampleBtn">Load sample</span></button>
+        </div>
+        <p class="hint" id="saveHint" data-i18n="saveHintText">You might save a local record here</p>
+      </div>
+      <div class="group" id="groupDetailsGroup" style="display:none;">
+        <p class="group-title"><span class="group-icon"><i class="fa-solid fa-users" aria-hidden="true"></i></span>
+          <span data-i18n="groupDetailsTitle">Group Details</span></p>
+        <p class="group-desc" data-i18n="groupDetailsDesc">Fill in your university and department, then add the members — names and IDs are suggested from saved records when the university and department match.</p>
+        <label class="first"><span data-i18n="universityCollegeNameLabel">University / College Name</span> <span class="req">*</span></label>
+        <input type="text" data-bind="universityName" placeholder="Enter your university or college name" required
+          aria-required="true" data-i18n-placeholder="universityPlaceholder">
+        <div class="row">
+          <div><label><span data-i18n="departmentLabel">Department</span> <span class="req">*</span></label><input type="text" data-bind="department"
+              placeholder="Enter your department" required aria-required="true" data-i18n-placeholder="departmentPlaceholder"></div>
+          <div><label><span data-i18n="batchLabel">Batch</span> <span class="opt" data-i18n="optionalTag">(Optional)</span></label><input type="text" data-bind="section"
+              placeholder="Enter your batch" data-i18n-placeholder="batchPlaceholder"></div>
+        </div>
+        <label><span data-i18n="semesterLabel">Semester</span> <span class="opt" data-i18n="optionalTag">(Optional)</span></label>
+        <input type="text" data-bind="semester" placeholder="Enter your semester" data-i18n-placeholder="semesterPlaceholder">
+        <label><span data-i18n="groupNameLabel">Group Name</span> <span class="req">*</span></label>
+        <input type="text" data-bind="groupName" placeholder="Enter your group name" required aria-required="true" data-i18n-placeholder="groupNamePlaceholder">
+        <label class="checkbox-label" for="groupHasLeaderCheck">
+          <input type="checkbox" id="groupHasLeaderCheck">
+          <span data-i18n="hasLeaderLabel">Does your group have a leader?</span>
+        </label>
+        <label class="first" data-i18n="membersLabel">Members</label>
+        <div class="lab-entries-list" id="groupMembersList"></div>
+        <p class="hint" id="groupSuggestHint"></p>
+        <p class="hint" id="groupLimitHint"></p>
+        <button class="btn btn-sm" id="addGroupMemberBtn" type="button"><i class="fa-solid fa-user-plus"
+            aria-hidden="true"></i><span data-i18n="addMemberBtn">Add member</span></button>
+      </div>
+      <div class="group">
+        <p class="group-title"><span class="group-icon"><i class="fa-solid fa-file-signature"
+              aria-hidden="true"></i></span> <span id="docInfoGroupTitle">Assignment
+            Information</span></p>
+        <label class="first"><span data-i18n="courseTitleLabel">Course Title / Subject</span><span class="req">*</span></label>
+        <input type="text" data-bind="courseTitle" placeholder="Enter course title" required aria-required="true" data-i18n-placeholder="courseTitlePlaceholder">
+        <div class="row">
+          <div><label><span data-i18n="courseCodeLabel">Course Code</span><span class="req">*</span></label><input type="text" data-bind="courseCode"
+              placeholder="Enter course code" required aria-required="true" data-i18n-placeholder="courseCodePlaceholder"></div>
+          <div><label id="docNoLabel"><span class="lbl-text">Assignment No.</span> <span
+                class="req">*</span></label><input type="text" id="docNoInput" data-bind="assignmentNo" placeholder="Enter number"
+              required aria-required="true"></div>
+        </div>
+        <label id="docTitleLabel"><span class="lbl-text">Assignment / Topic Title</span> <span
+            class="req">*</span></label>
+        <textarea id="docTitleInput" data-bind="assignmentTitle"
+          placeholder="Enter your assignment or topic title" required aria-required="true"></textarea>
+      </div>
+      <div class="group">
+        <p class="group-title"><span class="group-icon"><i class="fa-solid fa-calendar-check"
+              aria-hidden="true"></i></span> <span data-i18n="submissionDetailsTitle">Submission Details</span></p>
+        <label class="first"><span data-i18n="submittedToLabel">Submitted To — Teacher's Name</span> <span class="req">*</span></label>
+        <input type="text" data-bind="toName" placeholder="Enter teacher's full name" required aria-required="true" data-i18n-placeholder="teacherNamePlaceholder">
+        <div class="row">
+          <div><label><span data-i18n="designationLabel">Designation</span> <span class="req">*</span></label><input type="text" data-bind="toDesignation"
+              placeholder="Enter designation" required aria-required="true" data-i18n-placeholder="designationPlaceholder"></div>
+          <div><label><span data-i18n="departmentLabel">Department</span> <span class="req">*</span></label><input type="text" data-bind="deptTitle"
+              placeholder="Enter department name" required aria-required="true" data-i18n-placeholder="deptNamePlaceholder"></div>
+        </div>
+        <label class="checkbox-label" for="guestTeacherCheck">
+          <input type="checkbox" id="guestTeacherCheck" data-bind="isGuestTeacher">
+          <span data-i18n="guestTeacherLabel">Guest teacher</span> <span class="opt" data-i18n="guestTeacherOptTag" style="margin-left: 3px;">(from another institution)</span>
+        </label>
+        <div id="guestUniversityWrap" style="display:none;">
+          <label><span data-i18n="teacherUniversityLabel">Teacher's University</span> <span class="req">*</span></label>
+          <input type="text" id="toUniversityInput" data-bind="toUniversity"
+            placeholder="Enter teacher's university" aria-required="true" data-i18n-placeholder="teacherUniversityPlaceholder">
+        </div>
+        <div id="dateExpWrap" style="display:none;">
+          <label><span data-i18n="dateOfExperimentLabel">Date of Experiment</span> <span class="opt" data-i18n="optionalTag">(Optional)</span></label>
+          <input type="date" id="dateExperimentInput" class="cdate-native" data-bind="dateExperiment">
+        </div>
+        <label><span data-i18n="dateOfSubmissionLabel">Date of Submission</span> <span class="req">*</span></label>
+        <input type="date" id="dateSubmissionInput" class="cdate-native" data-bind="dateSubmission" required
+          aria-required="true">
+      </div>
+      <div class="group">
+        <p class="group-title"><span class="group-icon"><i class="fa-solid fa-building-columns"
+              aria-hidden="true"></i></span> <span data-i18n="institutionLogoTitle">Institution &amp; Logo</span></p>
+        <p class="group-desc" data-i18n="institutionLogoDesc">Your institution details and logo appear in the cover header.</p>
+        <label class="first"><span data-i18n="checkLogoDirLabel">Check if your logo is available in our directory</span> <span
+            class="opt" data-i18n="optionalLowerTag">(optional)</span></label>
+        <select id="logoDirectorySelect" class="csel-native">
+          <option value="" data-i18n="selectLogoOption">-- Select a logo --</option>
+          <option value="bangladesh">Bangladesh University</option>
+          <option value="brac">BRAC University</option>
+          <option value="bubt">Bangladesh University of Business and Technology</option>
+          <option value="canadian">Canadian University of Bangladesh</option>
+          <option value="city">City University</option>
+          <option value="daffodilv0">Daffodil Int. University - V0</option>
+          <option value="daffodilv1">Daffodil Int. University - V1</option>
+          <option value="daffodilv2">Daffodil Int. University - V2</option>
+          <option value="diu-cse">Dhaka Int. University - CSE</option>
+          <option value="diu-center">Dhaka Int. University - V0</option>
+          <option value="diu-right">Dhaka Int. University - V1</option>
+          <option value="diu-tagline">Dhaka Int. University - V2</option>
+          <option value="du-logo">Dhaka University</option>
+          <option value="ewu">East West University</option>
+          <option value="nub">Northern University of Bangladesh</option>
+          <option value="nsu-logo">North South University</option>
+          <option value="sipi">Shyamoli Ideal Polytechnic Institute</option>
+          <option value="seu">Southeast University</option>
+          <option value="titumir">Government Titumir College</option>
+          <option value="uiu">United International University</option>
+          <option value="gub">Green University of Bangladesh</option>
+          <option value="uoda">University of Development Alternative</option>
+          <option value="uu">Uttara University</option>
+        </select>
+        <label><span data-i18n="uploadLogoLabel">Upload Logo</span> <span class="opt" data-i18n="uploadLogoOptTag">(optional — PNG / SVG with transparency works best)</span></label>
+        <div class="logo-drop" id="logoDrop">
+          <div id="logoPreviewWrap" data-i18n="noLogoText">No logo uploaded — that space will stay blank.</div>
+        </div>
+        <input type="file" id="logoInput" accept="image/png,image/svg+xml,image/jpeg,image/webp" style="display:none">
+        <div class="logo-actions">
+          <button class="btn" id="logoBtn"><i class="fa-solid fa-upload" aria-hidden="true"></i><span data-i18n="uploadLogoBtn">Upload
+              Logo</span></button>
+          <button class="btn btn-ghost" id="logoClear" data-i18n="removeBtn">Remove</button>
+        </div>
+      </div>
+      <div class="group">
+        <p class="group-title"><span class="group-icon"><i class="fa-solid fa-table-cells"
+              aria-hidden="true"></i></span> <span data-i18n="coverLayoutTitle">Cover Layout</span></p>
+        <p class="group-desc" data-i18n="coverLayoutDesc">Start with a professionally crafted template. Make it yours with simple customization to
+          match your vision.</p>
+        <div class="tpl-grid" id="tplGrid"></div>
+      </div>
+      <div class="group">
+        <p class="group-title"><span class="group-icon"><i class="fa-solid fa-border-all"
+              aria-hidden="true"></i></span> <span data-i18n="styleTitle">Style</span></p>
+        <p class="group-desc" data-i18n="styleDesc">Pick a background texture for the page.</p>
+        <label class="first" data-i18n="pageBgLabel">Background</label>
+        <div class="tpl-grid bg-grid" id="pageBgGrid" role="radiogroup" aria-label="Page background">
+          <div class="tpl-card bg-card" data-bg="plain" role="radio" tabindex="0">
+            <span class="tpl-check" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>
+            <div class="tpl-swatch bg-swatch bg-swatch--plain"></div>
+            <span data-i18n="bgPlain">Plain</span>
+          </div>
+          <div class="tpl-card bg-card" data-bg="dotted" role="radio" tabindex="0">
+            <span class="tpl-check" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>
+            <div class="tpl-swatch bg-swatch bg-swatch--dotted"></div>
+            <span data-i18n="bgDotted">Dotted</span>
+          </div>
+          <div class="tpl-card bg-card" data-bg="grid" role="radio" tabindex="0">
+            <span class="tpl-check" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>
+            <div class="tpl-swatch bg-swatch bg-swatch--grid"></div>
+            <span data-i18n="bgGrid">Grid</span>
+          </div>
+        </div>
+      </div>
+      <div id="needIndexWrap" style="display:none;">
+        <label class="doc-check" id="checkIndexWrap">
+          <input type="checkbox" id="needIndexCheck">
+          <span><span data-i18n="needIndexLabel">Do you need an index?</span><small data-i18n="needIndexHint">Click on the checkbox to get one list of all lab reports</small></span>
+        </label>
+      </div>
+      <div id="idxTplGroup" class="group" style="display:none;">
+        <p class="group-title"><span class="group-icon"><i class="fa-solid fa-table-cells"
+              aria-hidden="true"></i></span> <span data-i18n="indexLayoutTitle">Index Layout</span></p>
+        <p class="group-desc" data-i18n="indexLayoutDesc">Pick how the index / list of lab reports is laid out.</p>
+        <div class="tpl-grid" id="idxTplGrid"></div>
+      </div>
+      <div id="indexDetailsWrap" class="group" style="display:none;">
+        <p class="group-title"><span class="group-icon"><i class="fa-solid fa-heading" aria-hidden="true"></i></span>
+          <span data-i18n="indexTitleGroupTitle">Index Title</span></p>
+        <label class="first"><span data-i18n="indexTitleLabel">Index Title</span> <span class="req">*</span></label>
+        <input type="text" id="indexTitleInput" placeholder="Enter index title" required aria-required="true" data-i18n-placeholder="indexTitlePlaceholder">
+        <label><span data-i18n="indexSubtitleLabel">Index subtitle</span> <span class="opt" data-i18n="optionalLowerTag">(optional)</span></label>
+        <input type="text" id="indexSubtitleInput" placeholder="Auto-fills from course code, submitted by &amp; to" data-i18n-placeholder="indexSubtitlePlaceholder">
+        <p class="hint" data-i18n="indexSubtitleHint">Leave blank to auto-build the subtitle from the course code and the submitted-by /
+          submitted-to fields below.</p>
+      </div>
+      <div id="labEntriesWrap" class="group" style="display:none;">
+        <p class="group-title"><span class="group-icon"><i class="fa-solid fa-list-check" aria-hidden="true"></i></span>
+          <span data-i18n="labEntriesTitle">Lab Report Entries</span></p>
+        <label class="first"><span data-i18n="addMultipleLabel">Add multiple at once</span> <span class="opt" data-i18n="optionalLowerTag">(optional)</span></label>
+        <div class="lab-bulk-add">
+          <input type="number" id="labBulkCount" min="1" max="50" placeholder="e.g. 5"
+            aria-label="Number of lab report rows to add">
+          <button class="btn btn-sm" id="labBulkAddBtn" type="button"><i class="fa-solid fa-layer-group"
+              aria-hidden="true"></i><span data-i18n="addRowsBtn">Add Rows</span></button>
+        </div>
+        <p class="hint" data-i18n="addRowsHint">Adds that many blank rows below at once — quicker than clicking "Add lab report" one at a
+          time.</p>
+        <div class="lab-entries-list" id="labEntriesList"></div>
+        <button class="btn btn-sm" id="addLabEntryBtn" type="button"><i class="fa-solid fa-plus"
+            aria-hidden="true"></i><span data-i18n="addMoreBtn">Add More</span></button>
+      </div>
+      <div class="group">
+        <p class="group-title"><span class="group-icon"><i class="fa-solid fa-font" aria-hidden="true"></i></span>
+          <span data-i18n="typographyTitle">Typography</span></p>
+        <p class="group-desc" data-i18n="typographyDesc">Choose the typeface used across the cover page — body text and headings update together.
+        </p>
+        <label class="first" data-i18n="coverFontLabel">Cover font</label>
+        <select id="fontSelect" class="csel-native">
+          <option value="times">Times New Roman (Classic)</option>
+          <option value="georgia">Georgia</option>
+          <option value="cambria">Cambria</option>
+          <option value="garamond">EB Garamond</option>
+          <option value="merriweather">Merriweather</option>
+          <option value="lora">Lora</option>
+          <option value="playfair">Playfair Display</option>
+          <option value="ptserif">PT Serif</option>
+          <option value="inter">Inter (Modern Sans)</option>
+        </select>
+      </div>
+      <div class="group">
+        <p class="group-title"><span class="group-icon"><i class="fa-solid fa-palette" aria-hidden="true"></i></span>
+          <span data-i18n="colorPaletteTitle">Color Palette</span></p>
+        <p class="group-desc" data-i18n="colorPaletteDesc">Recolors bars, headings and highlights only — the layout underneath never moves.</p>
+        <div class="palette-grid" id="paletteGrid"></div>
+        <div class="logo-actions">
+          <button class="btn btn-ghost" id="matchLogoPaletteBtnPalette" type="button" disabled title="Upload or select a logo first" data-i18n-title="matchPaletteLogoTitle"><i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i><span data-i18n="matchPaletteLogoBtn">Match Palette to Logo</span></button>
+        </div>
+        <p class="hint" id="logoMatchHintPalette"></p>
+        <div class="custom-pal-form" id="customPalForm" style="display:none;">
+          <label class="first" data-i18n="paletteNameLabel">Palette name</label>
+          <input type="text" id="cpName" placeholder="Enter palette name" data-i18n-placeholder="paletteNamePlaceholder">
+          <label data-i18n="primaryColorsLabel">Primary colors</label>
+          <div class="color-grid-2">
+            <div class="color-field"><input type="color" id="cpBar" value="#1e5993"><span class="cf-name" data-i18n="barLabel">Bar</span>
+            </div>
+            <div class="color-field"><input type="color" id="cpAccent" value="#6b1d52"><span
+                class="cf-name" data-i18n="accentLabel">Accent</span></div>
+          </div>
+          <label><span data-i18n="tintBgLabel">Tint backgrounds</span> <span class="opt" data-i18n="cardsTemplateTag">(cards template)</span></label>
+          <div class="color-grid-2">
+            <div class="color-field"><input type="color" id="cpTint" value="#ebf3f9"><span class="cf-name" data-i18n="tintLabel">Tint</span>
+            </div>
+            <div class="color-field"><input type="color" id="cpTintRow" value="#a4c4df"><span class="cf-name" data-i18n="tintRowLabel">Tint
+                row</span></div>
+          </div>
+          <label><span data-i18n="emblemColorsLabel">Emblem colors</span> <span class="opt" data-i18n="emblemTemplateTag">(emblem template)</span></label>
+          <div class="color-grid-2">
+            <div class="color-field"><input type="color" id="cpEmbPrimary" value="#273797"><span
+                class="cf-name" data-i18n="primaryLabel">Primary</span></div>
+            <div class="color-field"><input type="color" id="cpEmbSecondary" value="#479dce"><span
+                class="cf-name" data-i18n="secondaryLabel">Secondary</span></div>
+          </div>
+          <div class="custom-pal-actions">
+            <button class="btn btn-primary" id="cpSaveBtn" type="button"><i class="fa-solid fa-check"
+                aria-hidden="true"></i><span data-i18n="savePaletteBtn">Save palette</span></button>
+            <button class="btn btn-ghost" id="cpCancelBtn" type="button" data-i18n="cancelBtn">Cancel</button>
+          </div>
+          <p class="hint" id="cpHint"></p>
+        </div>
+      </div>
+      <div class="download-notice" id="downloadSelectGroup">
+        <p class="download-summary" id="downloadSummary"><i class="fa-solid fa-circle-info download-notice-icon"
+            aria-hidden="true"></i> <span data-i18n="downloadNoticeText">The top page downloads by default. Check "Do you need an
+          index?" above to include an index page too.</span></p>
+      </div>
+      <div class="export-actions">
+        <button class="btn btn-primary btn-block" id="printBtn" style="padding:13px; font-size:14px;"><i
+            class="fa-solid fa-download" aria-hidden="true"></i><span data-i18n="downloadPdfBtn">Download A4 PDF</span></button>
+        <button class="btn btn-block" id="pngBtn" style="padding:13px; font-size:13px;"><i class="fa-solid fa-download"
+            aria-hidden="true"></i><span data-i18n="downloadPngBtn">Download PNG (high-res)</span></button>
+      </div>
+      <p class="hint" id="exportHint" style="text-align:center;" data-i18n="exportHintText">Renders at 3× resolution and downloads a true 210×297mm
+        single-page PDF.</p>
+      <div class="sidebar-footer">
+        <nav class="footer-links" aria-label="Site information">
+          <button type="button" class="footer-link" data-info="about"><i class="fa-solid fa-circle-info"
+              aria-hidden="true"></i><span data-i18n="footerAbout">About</span></button>
+          <span class="footer-dot" aria-hidden="true">·</span>
+          <button type="button" class="footer-link" data-info="privacy"><i class="fa-solid fa-shield-halved"
+              aria-hidden="true"></i><span data-i18n="footerPrivacy">Privacy</span></button>
+          <span class="footer-dot" aria-hidden="true">·</span>
+          <button type="button" class="footer-link footer-link--contact" data-info="contact"><i
+              class="fa-solid fa-envelope" aria-hidden="true"></i><span data-i18n="footerContact">Contact</span></button>
+        </nav>
+        <p class="footer-credit"><span data-i18n="footerCreditPrefix">©</span> <span id="footerYear"></span> <span data-i18n="footerCreditText">Cover Genie — made for students, free forever.</span></p>
+      </div> <br class="lastHint">
+    </aside>
+    <main class="stage">
+      <div class="stage-toolbar">
+        <div class="toolbar-brand"><span class="mark">CG</span><b>Cover Genie</b></div>
+        <div class="dims"><b>A4</b> 210 × 297 mm <span style="opacity:.5;">·</span> <span id="tplLabel">—</span> <a
+            class="pill pill-thanks"
+            href="mailto:dev.kasfiya.upoma@gmail.com?subject=Thanks%20genie%20for%20Coverworks!"
+            title="Enjoyed it? Give a thanks."><span class="heart"><i class="fa-solid fa-hand-holding-heart"
+                aria-hidden="true"></i></span><span>Say thanks</span></a></div>
+        <div class="page-layout-ctl" id="pageLayoutCtl" role="group" aria-label="Preview layout">
+          <button type="button" class="active" data-layout="row" title="Side by side"><svg viewBox="0 0 24 24"
+              aria-hidden="true">
+              <path d="M4 3h6v18H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm10 0h6a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1h-6V3z" />
+            </svg><span>Side by side</span></button>
+          <button type="button" data-layout="col" title="Top to bottom"><svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 4a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v6H3V4zm0 10h18v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-6z" />
+            </svg><span>Top to bottom</span></button>
+        </div>
+        <div class="zoom-ctl">
+          <span>ZOOM</span>
+          <input type="range" id="zoomRange" min="28" max="100" value="70">
+          <span id="zoomVal">70%</span>
+        </div>
+      </div>
+      <div class="stage-scroll">
+        <div class="pages-viewport-sizer" id="pagesViewportSizer">
+          <div class="pages-viewport layout-row" id="pagesViewport">
+            <div class="paper-wrap" id="paperWrap">
+              <span class="page-tag">Cover</span>
+              <div class="paper-shadow"></div>
+              <div id="paper"></div>
+            </div>
+            <div class="paper-wrap" id="paperWrapIndex" style="display:none;">
+              <span class="page-tag">Index</span>
+              <div class="paper-shadow"></div>
+              <div id="paperIndex"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="fab" id="fabToggle" role="tablist" aria-label="View toggle">
+      <span class="fab-indicator"></span>
+      <button type="button" class="fab-seg" data-mode="customize" role="tab" aria-label="Customize"><span
+          class="fab-icon" aria-hidden="true"><svg viewBox="0 0 512 512" aria-hidden="true">
+            <path
+              d="M512 256c0 .9 0 1.8 0 2.7c-.4 36.5-33.6 61.3-70.1 61.3L344 320c-26.5 0-48 21.5-48 48c0 3.4 .4 6.7 1 9.9c2.1 10.2 6.5 20 10.8 29.9c6.1 13.8 12.1 27.5 12.1 42c0 31.8-21.6 60.7-53.4 62c-3.5 .1-7 .2-10.6 .2C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256zM128 288a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm0-96a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM288 96a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm96 96a32 32 0 1 0 0-64 32 32 0 1 0 0 64z" />
+          </svg></span><span>Customize</span></button>
+      <button type="button" class="fab-seg" data-mode="preview" role="tab" aria-label="Preview"><span
+          class="fab-icon eye-icon" aria-hidden="true"><svg viewBox="0 0 576 512" aria-hidden="true">
+            <path
+              d="M279.6 160.4C282.4 160.1 285.2 160 288 160C341 160 384 202.1 384 256C384 309 341 352 288 352C234.1 352 192 309 192 256C192 253.2 192.1 250.4 192.4 247.6C201.7 252.1 212.5 256 224 256C259.3 256 288 227.3 288 192C288 180.5 284.1 169.7 279.6 160.4zM480.6 112.6C527.4 156 558.7 207.1 573.5 243.7C576.8 251.6 576.8 260.4 573.5 268.3C558.7 304 527.4 355.1 480.6 399.4C433.5 443.2 368.8 480 288 480C207.2 480 142.5 443.2 95.42 399.4C48.62 355.1 17.34 304 2.461 268.3C-.8205 260.4-.8205 251.6 2.461 243.7C17.34 207.1 48.62 156 95.42 112.6C142.5 68.84 207.2 32 288 32C368.8 32 433.5 68.84 480.6 112.6V112.6zM288 112C208.5 112 144 176.5 144 256C144 335.5 208.5 400 288 400C367.5 400 432 335.5 432 256C432 176.5 367.5 112 288 112z" />
+          </svg></span><span>Preview</span></button>
+    </div>
+    <div class="info-modal" id="infoModal" aria-hidden="true">
+      <div class="info-backdrop" id="infoBackdrop"></div>
+      <div class="info-card" role="dialog" aria-modal="true" aria-labelledby="infoModalTitle">
+        <button type="button" class="info-close" id="infoClose" aria-label="Close"><i class="fa-solid fa-xmark"
+            aria-hidden="true"></i></button>
+        <div class="info-head">
+          <span class="info-head-icon" id="infoHeadIcon"><img src="img/fav.svg" alt="Cover Genie"
+              style="width:24px;height:24px;"></span>
+          <div class="info-head-text">
+            <h2 id="infoModalTitle" class="info-head-title">About Cover Genie</h2>
+            <p class="info-head-sub" id="infoHeadSub">Modern Academic Cover &amp; Index Builder</p>
+          </div>
+        </div>
+        <div class="info-tabs" role="tablist" aria-label="Information pages">
+          <button type="button" class="info-tab" data-tab="about" role="tab"><i class="fa-solid fa-hat-wizard"
+              aria-hidden="true"></i><span>About</span></button>
+          <button type="button" class="info-tab" data-tab="privacy" role="tab"><i class="fa-solid fa-shield-halved"
+              aria-hidden="true"></i><span>Privacy</span></button>
+          <button type="button" class="info-tab" data-tab="contact" role="tab"><i class="fa-solid fa-envelope"
+              aria-hidden="true"></i><span>Contact</span></button>
+        </div>
+        <div class="info-body" id="infoBody">
+          <section class="info-panel" data-panel="about">
+            <div class="info-hero">
+              <span class="info-badge"><i class="fa-solid fa-tag" aria-hidden="true"></i> v2.4 Production Release</span>
+              <h3 class="info-hero-title">Instant, Pixel-Perfect Cover Pages</h3>
+              <p class="info-hero-desc">Cover Genie eliminates the hassle of formatting assignment covers and lab
+                reports in Word. Effortlessly generate clean, university-compliant PDF cover pages and table of
+                contents in seconds.</p>
+            </div>
+
+            <div class="info-feature-grid">
+              <div class="info-feature">
+                <span class="info-feature-icon teal"><i class="fa-solid fa-bolt" aria-hidden="true"></i></span>
+                <h4>Real-Time Reactive Preview</h4>
+                <p>Every keystroke updates the live A4 paper preview instantly, ensuring zero guesswork before
+                  printing.</p>
+              </div>
+              <div class="info-feature">
+                <span class="info-feature-icon brass"><i class="fa-solid fa-palette" aria-hidden="true"></i></span>
+                <h4>Custom Themes &amp; Styles</h4>
+                <p>Choose from The Noir, Crest, or Aurum and many more. Apply custom institutional color
+                  palettes.</p>
+              </div>
+              <div class="info-feature">
+                <span class="info-feature-icon teal"><i class="fa-solid fa-list-check" aria-hidden="true"></i></span>
+                <h4>Lab Report Index Builder</h4>
+                <p>Add lab entries and Cover Genie auto-paginates a matching index page — tabular, ruled, or
+                  bordered.</p>
+              </div>
+              <div class="info-feature">
+                <span class="info-feature-icon brass"><i class="fa-solid fa-download" aria-hidden="true"></i></span>
+                <h4>One-Click PDF &amp; PNG</h4>
+                <p>Export a true 210×297 mm PDF or a high-resolution PNG, rendered entirely on your device.</p>
+              </div>
+            </div>
+            <div class="info-tech-stack">
+              <p class="info-tech-label"><i class="fa-solid fa-microchip" aria-hidden="true"></i> Tech Stack &amp;
+                Specification</p>
+              <div class="info-tech-pills">
+                <span class="info-tech-pill">HTML5 DOM</span>
+                <span class="info-tech-pill">Vanilla CSS &amp; JS</span>
+                <span class="info-tech-pill">html2canvas + jsPDF</span>
+                <span class="info-tech-pill">Client-Side Privacy</span>
+              </div>
+            </div>
+            <p class="info-footnote">Built by a student, for students — see the <span class="info-tablink"
+                data-goto="contact">Contact</span> tab if you'd like to say thanks, report a bug, or suggest a
+              template.</p>
+          </section>
+          <section class="info-panel" data-panel="privacy">
+            <div class="priv-alert">
+              <span class="priv-alert-icon"><i class="fa-solid fa-user-shield" aria-hidden="true"></i></span>
+              <div>
+                <p class="priv-alert-title">Your Privacy is Protected</p>
+                <p class="priv-alert-desc">Cover Genie operates entirely inside your web browser. None of your personal
+                  details, student IDs, or assignment information are sent to external servers.</p>
+              </div>
+            </div>
+            <div class="priv-section">
+              <h4 class="priv-heading"><span class="priv-num">1.</span> Local Processing &amp; Storage</h4>
+              <p>Everything you type into the form is processed locally in your browser and is never sent to our
+                servers. To make the app smoother next time, a few commonly reused choices stay in this browser's local
+                storage: your template, colour palette, font, university, department, name, ID, roll, section, semester,
+                course details, and logo, plus any custom colour palettes, any student record you press
+                &ldquo;Save this student&rdquo; on, and a short handoff from the landing page that is deleted as soon as
+                the app reads it. Assignment titles, dates, group members and lab entries are not kept. Clear your
+                browser's site data to remove everything.</p>
+            </div>
+            <div class="priv-section">
+              <h4 class="priv-heading"><span class="priv-num">2.</span> No Analytics or Tracking</h4>
+              <p>We do not store cookies, tracking tags, or third-party behavioral analytics scripts. Your academic
+                identity remains completely confidential.</p>
+            </div>
+            <div class="priv-section">
+              <h4 class="priv-heading"><span class="priv-num">3.</span> File Exports</h4>
+              <p>Generated PDF documents and print jobs are rendered directly by your browser using html2canvas + jsPDF
+                — without any cloud intermediary processing.</p>
+            </div>
+            <div class="priv-section">
+              <h4 class="priv-heading"><span class="priv-num">4.</span> Third-Party CDNs</h4>
+              <p>Google Fonts, CDNFonts (Li Ador Noirrit), Font Awesome, and the export libraries are loaded from CDNs (the landing page also loads its scroll library from unpkg). Those providers may see
+                standard request data (e.g. your IP address) as with any web request.</p>
+            </div>
+            <p class="info-updated" style="margin-top:14px;">Last updated: September 2026</p>
+          </section>
+          <section class="info-panel" data-panel="contact">
+            <div class="info-contact-grid">
+              <div class="info-contact-cards">
+                <div class="info-cc-card">
+                  <span class="info-cc-icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></span>
+                  <h4>Email Us Directly</h4>
+                  <p>Bug reports, feature requests, template ideas — or just to say the cover page saved your
+                    evening.</p>
+                  <a class="info-cc-link" href="mailto:dev.kasfiya.upoma@gmail.com">dev.kasfiya.upoma@gmail.com</a>
+                </div>
+                <div class="info-cc-card">
+                  <span class="info-cc-icon"><i class="fa-solid fa-clock" aria-hidden="true"></i></span>
+                  <h4>Response Time</h4>
+                  <p>Cover Genie is built and maintained by one person, so replies usually take a day or two —
+                    every message gets read.</p>
+                </div>
+              </div>
+              <div class="info-contact-form">
+                <label class="first">Your Name</label>
+                <input type="text" id="contactNameInput" placeholder="Enter your name">
+                <label>Your Email</label>
+                <input type="email" id="contactEmailInput" placeholder="Enter your email address">
+                <label>Message</label>
+                <textarea id="contactMessageInput" placeholder="I would like to suggest a template…"></textarea>
+                <button type="button" class="btn btn-primary btn-block" id="contactSendBtn"><i
+                    class="fa-solid fa-paper-plane" aria-hidden="true"></i><span>Send Message</span></button>
+                <p class="hint" id="contactSendHint" style="font-size: 10.5px; margin-top: 15px;">Opens your email app
+                  with this pre-filled — Cover Genie has no
+                  server, so nothing is sent from this page directly.</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/seeded.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/helpers.js"></script>
+  <script src="js/dept-art.js"></script>
+  <script src="js/render-cover.js"></script>
+  <script src="js/render-index.js"></script>
+  <script src="js/render-sync.js"></script>
+  <script src="js/ui-controls.js"></script>
+  <script src="js/sidebar.js"></script>
+  <script src="js/student-lookup.js"></script>
+  <script src="js/suggestions-data.js"></script>
+  <script src="js/viewport.js"></script>
+  <script src="js/export.js"></script>
+  <script src="js/persist.js"></script>
+  <script src="js/page-bg.js"></script>
+  <script src="js/app-init.js"></script>
+</body>
+
+</html>
