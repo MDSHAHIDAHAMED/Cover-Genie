@@ -1,0 +1,40 @@
+.seo-main{width:min(calc(100% - 48px),900px);margin:0 auto;padding:36px 0 24px}
+.seo-main h1{font-family:"Space Grotesk",Inter,sans-serif;font-weight:700;letter-spacing:-.02em;line-height:1.1;font-size:clamp(30px,5vw,48px);margin:14px 0 14px;color:var(--text)}
+.seo-main h2{font-family:"Space Grotesk",Inter,sans-serif;font-size:clamp(20px,3vw,26px);margin:44px 0 16px;color:var(--text)}
+.seo-main p{color:var(--dim);line-height:1.7}.seo-main .hero-lead{max-width:680px;font-size:16px}
+.bc{font:500 11px "JetBrains Mono",monospace;letter-spacing:.06em;color:var(--faint);text-transform:uppercase;margin-bottom:22px}.bc a{color:var(--dim)}.bc a:hover{color:var(--brass)}.bc span{color:var(--brass-2)}
+.seo-main .primary-btn,.seo-main .secondary-btn{margin:6px 10px 6px 0}
+.seo-main .secondary-btn{background:transparent;color:var(--text);border:1px solid var(--line);box-shadow:none}.seo-main .secondary-btn:hover{border-color:rgba(214,162,74,.5);color:var(--brass-2)}
+.logos{display:flex;flex-wrap:wrap;gap:14px;margin:26px 0}
+.logo-tile{margin:0;display:grid;place-items:center;min-width:150px;height:110px;padding:16px 22px;border-radius:16px;background:#f6f7fa;border:1px solid rgba(255,255,255,.12);box-shadow:0 18px 40px -22px rgba(0,0,0,.7);transition:transform .25s var(--ease),border-color .25s var(--ease)}
+.logo-tile:hover{transform:translateY(-3px);border-color:var(--brass)}.logo-tile img{max-width:240px;max-height:78px;width:auto;height:auto;object-fit:contain}
+.steps{list-style:none;counter-reset:s;display:grid;grid-template-columns:repeat(3,1fr);gap:14px;padding:0;margin:0}
+.steps li{counter-increment:s;position:relative;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px}
+.steps li::before{content:"0" counter(s);display:block;font:600 11px "JetBrains Mono",monospace;letter-spacing:.12em;color:var(--brass-2);margin-bottom:10px}
+.steps b{display:block;color:var(--text);margin-bottom:4px}.steps span{color:var(--dim);font-size:14px;line-height:1.55}
+.uchips{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px}
+.uchip{display:flex;align-items:center;gap:11px;padding:11px;border:1px solid var(--line);border-radius:12px;background:var(--panel);transition:.2s ease}
+.uchip:hover{border-color:rgba(214,162,74,.45);background:rgba(255,255,255,.03);transform:translateY(-1px)}
+.uchip .uni-avatar{flex:none}.uchip b{display:block;color:var(--text);font-size:14px;line-height:1.3}.uchip small{color:var(--faint);font-size:12px}
+.seo-faq{margin-top:48px}.seo-faq h2{margin-top:8px}
+.seo-faq details{position:relative;border:1px solid var(--line);border-radius:14px;background:linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,.01)),var(--panel);margin:12px 0;overflow:hidden;transition:border-color .25s var(--ease),box-shadow .25s var(--ease)}
+.seo-faq details::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--brass);opacity:0;transition:opacity .25s var(--ease)}
+.seo-faq details:hover{border-color:rgba(214,162,74,.35)}.seo-faq details[open]{border-color:rgba(214,162,74,.45);box-shadow:0 10px 30px rgba(0,0,0,.28)}.seo-faq details[open]::before{opacity:1}
+.seo-faq summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 20px;cursor:pointer;font-weight:600;font-size:15px;color:var(--text)}
+.seo-faq summary::-webkit-details-marker{display:none}
+.seo-faq summary::after{content:"";flex:none;box-sizing:border-box;width:28px;height:28px;border-radius:50%;color:var(--brass);border:1px solid rgba(214,162,74,.25);background:linear-gradient(currentColor,currentColor) center/12px 2px no-repeat,linear-gradient(currentColor,currentColor) center/2px 12px no-repeat,rgba(214,162,74,.1);transition:transform .35s var(--ease),color .25s var(--ease),background-color .25s var(--ease)}
+.seo-faq details[open] summary::after{transform:rotate(45deg);color:var(--brass-ink);background:linear-gradient(currentColor,currentColor) center/12px 2px no-repeat,linear-gradient(currentColor,currentColor) center/2px 12px no-repeat,var(--brass)}
+/* smooth open/close (Chrome/Edge 131+, Safari, recent Firefox; older browsers open instantly) */
+:root{interpolate-size:allow-keywords}
+.seo-faq details::details-content{block-size:0;overflow:hidden;transition:block-size .35s var(--ease),content-visibility .35s allow-discrete}
+.seo-faq details[open]::details-content{block-size:auto}
+@media(prefers-reduced-motion:reduce){.seo-faq summary::after,.seo-faq details::details-content{transition:none}}
+.seo-faq details p{margin:0;padding:0 20px 18px;font-size:14px}
+@media(max-width:700px){.steps{grid-template-columns:1fr}.logo-tile{min-width:0;flex:1 1 140px}}
+/* --- bottom-gap fix ---
+   landing.css positions .ambient-b with position:absolute; top:1500px,
+   which stretches short pages to ~1840px and leaves blank space under the footer. */
+.ambient{position:fixed}
+.ambient-a{top:35vh}
+.ambient-b{top:auto;bottom:-120px}
+.seo-faq details:last-of-type{margin-bottom:0}
