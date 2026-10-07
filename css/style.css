@@ -3211,12 +3211,13 @@ input[type=range]:active {
   position: absolute;
   left: 62px;
   top: 658px;
-  width: 470px;
+  /* Wide enough for Course Code + Date of Exp on one line */
+  width: 670px;
   color: #111;
   font-size: 17px;
   line-height: 1.72;
   white-space: normal;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
 }
 
 .tpl-emblem .assignment-info .row {
@@ -3224,10 +3225,38 @@ input[type=range]:active {
   grid-template-columns: 200px 23px 1fr;
 }
 
-.tpl-emblem .assignment-info .row-split {
-  display: grid;
-  grid-template-columns: 105px 23px 158px 90px 40px 23px 1fr;
-  gap: 0;
+/* Course Code (left) + Date of Exp (right) — never letter-wrap the date.
+   Old 7-column grid put the date in a 23px track, which broke "30 September 2026". */
+.tpl-emblem .assignment-info .emb-row-split {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 28px;
+  white-space: nowrap;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.tpl-emblem .assignment-info .emb-row-split .emb-split-group {
+  display: inline-flex;
+  align-items: baseline;
+  flex: 0 0 auto;
+  min-width: max-content;
+  white-space: nowrap;
+}
+
+.tpl-emblem .assignment-info .emb-row-split .colon {
+  width: 23px;
+  flex: 0 0 23px;
+  text-align: center;
+}
+
+.tpl-emblem .assignment-info .emb-row-split .lbl,
+.tpl-emblem .assignment-info .emb-row-split .emb-cValue,
+.tpl-emblem .assignment-info .emb-row-split .emb-expValue {
+  white-space: nowrap;
+  overflow-wrap: normal;
+  word-break: normal;
 }
 
 .emb-cValue {

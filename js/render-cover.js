@@ -299,10 +299,13 @@ function renderEmblem() {
   const logo = state.logoDataUrl
     ? `<img src="${state.logoDataUrl}">`
     : `<div class="logo-placeholder"></div>`;
+  // Split row: two groups with space-between so Date of Exp sits on the right
+  // on one line. Avoid class "row" alone for the split (sidebar `.row > *`
+  // sets min-width:0 and was crushing the date into a letter-wrap column).
   const codeRow = state.dateExperiment
-    ? `<div class="row row-split">
-       <span class="lbl">${t('courseCode')}</span><span class="colon">:</span><span class="emb-cValue">${esc(or(state.courseCode, '—'))}</span>
-       <span class="lbl">${t('dateOfExp')}</span><span class="colon">:</span><span>${esc(fmtDate(state.dateExperiment))}</span>
+    ? `<div class="emb-row-split">
+       <span class="emb-split-group"><span class="lbl">${t('courseCode')}</span><span class="colon">:</span><span class="emb-cValue">${esc(or(state.courseCode, '—'))}</span></span>
+       <span class="emb-split-group"><span class="lbl">${t('dateOfExp')}</span><span class="colon">:</span><span class="emb-expValue">${esc(fmtDate(state.dateExperiment))}</span></span>
      </div>`
     : `<div class="row"><span class="lbl">${t('courseCode')}</span><span class="colon">:</span><span>${esc(or(state.courseCode, '—'))}</span></div>`;
   const isGroup = isGroupDoc();
